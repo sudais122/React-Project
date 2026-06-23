@@ -1,8 +1,8 @@
 import React from 'react'
 import './Projects.css'
 import Project from '../../../Components/Navbar/ui/Project/Project'
-import FYP from '../../../../assets/fyp.png'
-import SehatDost from '../../../../assets/sehatdost.png'
+import FYP from '../../../assets/fyp.png'
+import SehatDost from '../../../assets/sehatdost.png'
 
 const ProjectDetails = [
     {
@@ -46,7 +46,13 @@ const Projects = () => {
         <h4>Projects</h4>
         <p>A few projects I've built while sharpening skills.</p>
         </div>
-        <Project />
+        <div className='ProjectDet'>
+        {ProjectDetails.map((item,index)=>(
+            <Project
+            key={index}{...item}
+            />
+        ))}
+        </div>
     </div>
     </>
   )

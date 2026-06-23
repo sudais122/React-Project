@@ -1,41 +1,21 @@
 .ProjectsSection {
-  padding: 3rem 13rem 0 0;
-}
-
-.PJText {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 32px;
-}
-
-.PJText h2 {
-  margin: 0;
-  color: white;
-  font-size: 30px;
-}
-
-.PJText p {
-  margin: 0;
-  color: #9aa6ba;
-}
-
-/* GRID */
-.ProjectGrid {
+  padding: 0rem 1rem 0 0;
+  overflow: hidden;
   display: flex;
   flex-wrap: wrap;
-  gap: 22px;
 }
-
+.ProjectGrid{
+  display: flex;
+}
 /* CARD */
 .ProjectCard {
   display: flex;
   flex-direction: column;
+  width: 350px;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: 18px;
-  width: 350px;
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -48,17 +28,21 @@
 /* THUMBNAIL */
 .ProjectThumb {
   aspect-ratio: 16 / 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: linear-gradient(135deg, #0e1626, #0a0f1a);
+  overflow: hidden;
+  display: flex;
 }
 
-.thumbFallback {
-  font-family: sans-serif;
-  font-size: 3rem;
-  font-weight: 800;
-  color: rgba(42, 204, 241, 0.55);
+.ProjectThumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.ProjectCard:hover .ProjectThumb img {
+  transform: scale(1.05);
 }
 
 /* BODY */
@@ -139,11 +123,18 @@
   border-color: rgba(42, 204, 241, 0.4);
 }
 
+/* ACCESSIBILITY */
 @media (prefers-reduced-motion: reduce) {
-  .ProjectCard {
+  .ProjectCard,
+  .ProjectThumb img {
     transition: none;
   }
+
   .ProjectCard:hover {
+    transform: none;
+  }
+
+  .ProjectCard:hover .ProjectThumb img {
     transform: none;
   }
 }
