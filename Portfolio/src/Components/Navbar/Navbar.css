@@ -1,0 +1,126 @@
+:root {
+  --bg-base: #070b14;
+  --surface: #0e1626;
+  --surface-hairline: rgba(255, 255, 255, 0.025);
+  --glass: rgba(8, 12, 22, 0.55);
+  --glass-strong: rgba(8, 12, 22, 0.78);
+
+  --text: #e7ecf5;
+  --text-dim: #8a94a6;
+
+  --accent: #5b9dff;
+  --accent-2: #7c8cff;
+
+  --border: rgba(255, 255, 255, 0.07);
+  --radius: 12px;
+}
+
+/* --- shell ---------------------------------- */
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0.9rem 5rem;
+  font-family: sans-serif;
+
+  background: rgba(8, 12, 22, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.25);
+}
+
+nav.scrolled {
+  background: var(--glass-strong);
+}
+
+
+.logo h3 {
+    color: white;
+    font-weight: bolder;  
+}
+.logo h3 span{
+    color: #22D4EF;
+}
+
+
+.navlinks {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.navlinks a {
+  position: relative;
+  padding: 0.5rem 0.85rem;
+  border-radius: 8px;;
+
+color: #9AA6BA;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.navlinks a:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 7px;
+}
+
+
+.navlinks button {
+  margin-left: 0.6rem;
+  padding: 0.55rem 1.2rem;
+  border: 0;
+  border-radius: var(--radius);
+
+  color: #070b14;
+  font-size: 0.92rem;
+  font-weight: 600;
+
+    background: linear-gradient(135deg, #22d3ee, #38bdf8);
+  cursor: pointer;
+
+  transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
+}
+
+.navlinks button:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+  box-shadow: 0 6px 20px rgba(91, 157, 255, 0.35);
+}
+
+.navlinks button:active {
+  transform: translateY(0);
+}
+
+
+@media (max-width: 720px) {
+  nav {
+    padding: 0.8rem 1.1rem;
+    gap: 0.75rem;
+  }
+
+  .navlinks {
+    gap: 0.1rem;
+  }
+
+  .navlinks a {
+    padding: 0.45rem 0.55rem;
+    font-size: 0.85rem;
+  }
+
+  .navlinks button {
+    margin-left: 0.35rem;
+    padding: 0.5rem 0.9rem;
+  }
+}

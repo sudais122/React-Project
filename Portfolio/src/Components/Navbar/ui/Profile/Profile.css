@@ -1,0 +1,79 @@
+.profileWrapper {
+    position: relative;
+    width: 320px;
+    height: 320px;
+}
+
+/* MAIN IMAGE BOX */
+.Image {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow:
+        0 0 0 1px rgba(34, 211, 238, 0.4),
+        inset 0 0 30px rgba(34, 211, 238, 0.12);
+}
+
+/* actual image */
+.Image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* DARK GRADIENT OVERLAY (inside image) */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(7, 11, 20, 0.55),
+        transparent 45%
+    );
+}
+
+/* FLOATING ICONS BASE */
+.icon {
+    position: absolute;
+    z-index: 999;
+    font-size: 1.5rem;
+    background: rgba(15, 23, 42, 0.8);
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #22d3ee;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* POSITIONS */
+.icon1 {
+    top: 20px;
+    left: -20px;
+}
+
+.icon2 {
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    animation-delay: 0.5s;
+}
+
+.icon3 {
+    bottom: 20px;
+    left: -15px;
+    animation-delay: 1s;
+}
+
+/* FLOAT ANIMATION */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}

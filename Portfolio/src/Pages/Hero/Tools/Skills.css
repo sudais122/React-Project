@@ -1,0 +1,30 @@
+.SKText h2{
+    color: white;
+    font-size: 46px;
+}
+.Desc{
+    color: #9AA6BA;
+}
+.SKText{
+    padding-left: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.SKText h5{
+    padding-top: 2rem;
+    color: #E8EDF5;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.ToolsHeading{
+    padding-top: 2rem;
+    color: #E8EDF5;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.maincard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}

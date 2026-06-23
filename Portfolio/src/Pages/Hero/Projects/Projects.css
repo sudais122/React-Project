@@ -1,0 +1,18 @@
+.ProjectWrapper{
+    padding-left: 7rem;
+    padding-top: 7rem;
+    width: 100vw;
+    height: auto;
+}
+.ProjHeading{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ProjHeading h4{
+    color: white;
+    font-size: 46px;
+}
+.ProjHeading p{
+    color: #9AA6BA;
+}

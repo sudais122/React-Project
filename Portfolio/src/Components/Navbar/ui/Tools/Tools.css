@@ -1,0 +1,71 @@
+.ToolsWrapper {
+    width: 240px;
+    min-height: 85px;
+
+    display: flex;
+    flex-direction: row;
+    /* image + text side by side */
+    align-items: center;
+    gap: 12px;
+
+    padding: 0px 12px;
+
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+
+    transition: 0.3s ease;
+}
+
+
+/* image box */
+
+.ToolsWrapper img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+
+}
+
+
+/* text */
+
+.SkillText {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.SkillText p {
+    font-weight: lighter;
+    margin: 0;
+    font-size: 12px;
+    color: #94a3b8;
+
+    font-size: 0.8rem;
+
+    line-height: 1.4;
+}
+
+.SkillText h5 {
+    padding-top: 0;
+    font-size: medium;
+}
+
+/* hover effect */
+
+.ToolsWrapper:hover {
+
+    transform: translateY(-3px);
+
+    border-color: #2ACCF1;
+}
+
+.toolmain {
+    width: auto;
+    height: auto;
+    display: flex;
+}

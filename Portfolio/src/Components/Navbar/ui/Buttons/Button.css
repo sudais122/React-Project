@@ -1,0 +1,38 @@
+.btnWrapper {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* View Projects Button */
+.projectBtn {
+    background-color: #2ACCF1;
+    color: #04121A;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.projectBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(42, 204, 241, 0.3);
+}
+
+/* Contact Button */
+.contactBtn {
+    background-color: #11151D;
+    color: #ffffff;
+    border: 1px solid #2F3139;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contactBtn:hover {
+    transform: translateY(-2px);
+}

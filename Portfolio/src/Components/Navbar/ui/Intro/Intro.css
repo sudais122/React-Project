@@ -1,0 +1,38 @@
+*{
+    font-family: sans-serif;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    max-width: 600px;
+}
+
+/* Main heading */
+.intro h1 {
+    font-size: 3.5rem;
+    font-weight: bolder;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+/* Your name highlight */
+.intro h1 span {
+    color: #50D3F5;
+    display: inline-block;
+}
+
+/* Subtitle */
+.intro h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #cbd5e1;
+}
+
+/* Paragraph */
+.intro p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #94a3b8;
+}

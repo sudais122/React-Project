@@ -1,0 +1,149 @@
+.ProjectsSection {
+  padding: 3rem 13rem 0 0;
+}
+
+.PJText {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.PJText h2 {
+  margin: 0;
+  color: white;
+  font-size: 30px;
+}
+
+.PJText p {
+  margin: 0;
+  color: #9aa6ba;
+}
+
+/* GRID */
+.ProjectGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+/* CARD */
+.ProjectCard {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 18px;
+  width: 350px;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ProjectCard:hover {
+  transform: translateY(-6px);
+  border-color: rgba(42, 204, 241, 0.5);
+  box-shadow: 0 18px 40px rgba(42, 204, 241, 0.14);
+}
+
+/* THUMBNAIL */
+.ProjectThumb {
+  aspect-ratio: 16 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0e1626, #0a0f1a);
+}
+
+.thumbFallback {
+  font-family: sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: rgba(42, 204, 241, 0.55);
+}
+
+/* BODY */
+.ProjectBody {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+}
+
+.ProjectBody h3 {
+  margin: 0;
+  color: #f1f5f9;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.ProjectBody p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* TAGS */
+.ProjectTags {
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ProjectTags li {
+  font-size: 0.72rem;
+  color: #2accf1;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(42, 204, 241, 0.08);
+  border: 1px solid rgba(42, 204, 241, 0.2);
+}
+
+/* LINKS */
+.ProjectLinks {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.ProjectLinks a {
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: filter 0.2s ease, background 0.2s ease, border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.liveBtn {
+  color: #06141a;
+  background: linear-gradient(135deg, #2accf1, #5b9dff);
+}
+
+.liveBtn:hover {
+  filter: brightness(1.08);
+  box-shadow: 0 6px 18px rgba(42, 204, 241, 0.3);
+}
+
+.codeBtn {
+  color: #c8f4fb;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.codeBtn:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(42, 204, 241, 0.4);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ProjectCard {
+    transition: none;
+  }
+  .ProjectCard:hover {
+    transform: none;
+  }
+}

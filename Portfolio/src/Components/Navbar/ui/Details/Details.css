@@ -1,0 +1,51 @@
+.detailsWrapper {
+    display: flex;
+    background: transparent;
+    justify-content: flex-start;
+}
+
+/* Each card */
+.card {
+    flex: 1;
+    max-width: 130px;
+    text-align: left;
+    padding: 15px 20px;
+    background: transparent;       
+    position: relative;
+}
+
+.card:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 20%;
+    height: 60%;
+    width: 1px;
+    background-color: #2F3139;     
+}
+
+.number {
+    font-size: 2rem;
+    font-weight: 900;              
+    color: #ffffff;               
+    margin: 0;
+}
+
+/* Label */
+.label {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .detailsWrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card:not(:last-child)::after {
+        display: none;
+    }
+}

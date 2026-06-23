@@ -1,0 +1,62 @@
+.aboutwrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;              /* better section separation */
+    padding: 80px 10%;
+    color: white;
+}
+
+/* INTRO SECTION */
+.intro {
+    max-width: 800px;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    color: #94a3b8;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+/* EDUCATION SECTION */
+.Education {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* heading spacing */
+.Education h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* list reset */
+.Education ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;   /* space between items */
+    padding: 0;
+    margin: 0;
+}
+
+/* each item */
+.Education ul li {
+    color: #94a3b8;
+    padding: 15px 18px;
+    border-left: 2px solid rgba(42, 204, 241, 0.4); /* modern accent line */
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 8px;
+    line-height: 1.6;
+}
+
+/* strong text */
+.Education ul li strong {
+    color: #ffffff;
+}
