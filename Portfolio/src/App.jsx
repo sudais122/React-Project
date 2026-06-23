@@ -5,6 +5,7 @@ import { Hero } from './Pages/Hero/Hero';
 import About from './Pages/Hero/About/About';
 import Skills from './Pages/Hero/Tools/Skills';
 import Projects from './Pages/Hero/Projects/Projects';
+import Achievements from './Components/Navbar/ui/Achivmennts/Achievements';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <About />
       <Skills />
       <Projects />
+      <Achievements/>
     </div>
     </>
   )

@@ -1,0 +1,129 @@
+.AchievementsSection {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 7rem 6rem 0rem 6rem;
+}
+
+.ACHText {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.ACHText h2 {
+  margin: 0;
+  color: white;
+  font-size: 30px;
+}
+
+.ACHText p {
+  margin: 0;
+  color: #9aa6ba;
+}
+
+/* GRID */
+.AchGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
+/* CARD */
+.AchCard {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 20px;
+
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 18px;
+
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.AchCard:hover {
+  transform: translateY(-6px);
+  border-color: rgba(42, 204, 241, 0.5);
+  box-shadow: 0 15px 35px rgba(42, 204, 241, 0.14);
+}
+
+/* BADGE */
+.AchBadge {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+
+  color: #2accf1;
+  background: rgba(42, 204, 241, 0.08);
+  border: 1px solid rgba(42, 204, 241, 0.2);
+}
+
+.AchBadge svg {
+  width: 26px;
+  height: 26px;
+}
+
+/* BODY */
+.AchBody {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+}
+
+.AchBody h3 {
+  margin: 0;
+  color: #f1f5f9;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.AchMeta {
+  font-size: 0.78rem;
+  color: #2accf1;
+  font-weight: 500;
+}
+
+.AchBody p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+/* CERTIFICATE LINK (only on cards that have one) */
+.certBtn {
+  align-self: flex-start;
+  margin-top: 6px;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #c8f4fb;
+  padding: 7px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.certBtn:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(42, 204, 241, 0.4);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .AchCard {
+    transition: none;
+  }
+  .AchCard:hover {
+    transform: none;
+  }
+}
