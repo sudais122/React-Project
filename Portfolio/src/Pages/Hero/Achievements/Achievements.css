@@ -1,7 +1,8 @@
 .AchievementsSection {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 7rem 6rem 0rem 6rem;
+  margin: 0 auto; 
+  padding: 7rem 5rem 6rem 7rem;
+
 }
 
 .ACHText {
@@ -45,9 +46,7 @@
 }
 
 .AchCard:hover {
-  transform: translateY(-6px);
   border-color: rgba(42, 204, 241, 0.5);
-  box-shadow: 0 15px 35px rgba(42, 204, 241, 0.14);
 }
 
 /* BADGE */
@@ -100,7 +99,7 @@
   line-height: 1.45;
 }
 
-/* CERTIFICATE LINK (only on cards that have one) */
+/* CERTIFICATE LINK */
 .certBtn {
   align-self: flex-start;
   margin-top: 6px;
@@ -116,7 +115,6 @@
 
 .certBtn:hover {
   background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(42, 204, 241, 0.4);
 }
 
 @media (prefers-reduced-motion: reduce) {

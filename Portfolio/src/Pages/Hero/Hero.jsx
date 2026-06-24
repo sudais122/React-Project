@@ -9,7 +9,7 @@ import { Profile } from '../../Components/Navbar/ui/Profile/Profile'
 
 export const Hero = () => {
   return (
-    <section className='MainHero'>
+    <section className='MainHero' id='home'>
 
       <div className='Left'>
         <div className='Content'>

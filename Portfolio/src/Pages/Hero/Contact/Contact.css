@@ -1,0 +1,234 @@
+/* ============================================
+   Contact.css
+   ============================================ */
+
+.ContactSection {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+.CTText {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.CTText h2 {
+  margin: 0;
+  color: white;
+  font-size: 32px;
+}
+
+.CTText p {
+  margin: 0;
+  color: #9aa6ba;
+}
+
+/* TWO-COLUMN LAYOUT */
+.ContactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 28px;
+  align-items: start;
+}
+
+/* ---------- LEFT: info ---------- */
+.ContactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contactRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  text-decoration: none;
+
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 14px;
+
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.contactRow:hover {
+  transform: translateY(-3px);
+  border-color: rgba(42, 204, 241, 0.45);
+  background: rgba(42, 204, 241, 0.04);
+}
+
+.contactIcon {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  color: #2accf1;
+  background: rgba(42, 204, 241, 0.08);
+  border: 1px solid rgba(42, 204, 241, 0.2);
+}
+
+.contactIcon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.contactText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contactText strong {
+  color: #f1f5f9;
+  font-size: 0.95rem;
+}
+
+.contactText span {
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+/* availability badge */
+.availBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  align-self: flex-start;
+  margin-top: 6px;
+  padding: 8px 14px;
+  border-radius: 999px;
+
+  color: #c8f4fb;
+  font-size: 0.85rem;
+  font-weight: 500;
+
+  background: rgba(34, 197, 94, 0.06);
+  border: 1px solid rgba(34, 197, 94, 0.25);
+}
+
+.availDot {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #22c55e;
+}
+
+.availDot::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #22c55e;
+  animation: avail-pulse 1.8s ease-out infinite;
+}
+
+@keyframes avail-pulse {
+  0%   { transform: scale(1);   opacity: 0.7; }
+  100% { transform: scale(2.6); opacity: 0; }
+}
+
+/* ---------- RIGHT: form ---------- */
+.ContactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 18px;
+}
+
+.ContactForm label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #e8edf5;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.ContactForm input,
+.ContactForm textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 14px;
+  border-radius: 10px;
+
+  color: #f1f5f9;
+  font-size: 0.9rem;
+  font-family: inherit;
+
+  background: rgba(8, 12, 22, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ContactForm textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.ContactForm input::placeholder,
+.ContactForm textarea::placeholder {
+  color: #5d6877;
+}
+
+.ContactForm input:focus,
+.ContactForm textarea:focus {
+  outline: none;
+  border-color: #2accf1;
+  box-shadow: 0 0 0 3px rgba(42, 204, 241, 0.15);
+}
+
+.ContactForm button {
+  margin-top: 4px;
+  padding: 12px;
+  border: 0;
+  border-radius: 12px;
+
+  color: #06141a;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #2accf1, #5b9dff);
+  transition: filter 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ContactForm button:hover {
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 22px rgba(42, 204, 241, 0.3);
+}
+
+.ContactForm button:active {
+  transform: translateY(0);
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 760px) {
+  .ContactGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contactRow,
+  .ContactForm button {
+    transition: none;
+  }
+  .availDot::after {
+    animation: none;
+  }
+}

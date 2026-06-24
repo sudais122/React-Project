@@ -3,6 +3,7 @@ import './Projects.css'
 import Project from '../../../Components/Navbar/ui/Project/Project'
 import FYP from '../../../assets/fyp.png'
 import SehatDost from '../../../assets/sehatdost.png'
+import TrustScan from '../../../assets/TRUSTSCAN.png'
 
 const ProjectDetails = [
     {
@@ -23,7 +24,7 @@ const ProjectDetails = [
     },
     {
         Name: 'TrustScan',
-        image:'',
+        image: TrustScan,
         Description: 'Detect scams instantly from messages and links using smart analysis.',
         tag1: 'HTML,CSS',
         tag2: 'JavaScript',
@@ -41,7 +42,7 @@ const ProjectDetails = [
 const Projects = () => {
   return (
     <>
-    <div className='ProjectWrapper'>
+    <div className='ProjectWrapper' id='projects'>
         <div className='ProjHeading'>
         <h4>Projects</h4>
         <p>A few projects I've built while sharpening skills.</p>

@@ -28,7 +28,7 @@ const ToolsData = [
 const Skills = () => {
   return (
     <>
-    <div className='skillWrapper'>
+    <div className='skillWrapper' id='skills'>
         <div className='SKText'>
             <h2>Tools I work with</h2>
             <p className='Desc'>The technologies I reach for to design, build, and ship modern web <br /> interfaces.</p>

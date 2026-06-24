@@ -5,7 +5,7 @@ import Aboutme from '../../../Components/Navbar/ui/Aboutme/Aboutme'
 
 const About = () => {
   return (
-    <section className='aboutSection'>
+    <section className='aboutSection' id='about'>
 
       {/* LEFT - IMAGE */}
       <div className='aboutLeft'>

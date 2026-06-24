@@ -124,3 +124,24 @@ color: #9AA6BA;
     padding: 0.5rem 0.9rem;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
+
+.navlinks a {
+  color: #9aa6ba;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+
+.navlinks a.active {
+  color: #2accf1;
+  font-weight: 700;
+}
+
+
+.navlinks a:hover {
+  color: white;
+}
